@@ -6,6 +6,33 @@
     <title>Document</title>
 </head>
 <body>
+    <h1 id="title">Microverse Survey Form. </h1>
+    <p> Thank you for taking the time to answer this.</p>
+    <form id= "survey-form">
+        <label id="name-label" >NAME</label>
+        <input id="name" type="text" placeholder=" Enter your name here">
+        <label id="email-label" > e-mail </label>
+        <input id="email" type="email" required placeholder= "Enter your e-mail here">
+                                   <label id="number-label> Number</label>                              
+        <input id= "number" type="number" min= "18" max="65" required placeholder= "Enter your age here">
+        <label id="Gender">
+             <select name="Gender" id="dropdown">
+       <option value= "Male">Male</option>
+     <option value="Female"> Female</option>
+    </select>    
+   <label> Agree to terms and conditios for the survey.</label>                        
+    <input type="radio"> YES</input>
+   <input type="radio"> NO</input>   
+                      <label> What Programs Languages would you like to learn?</label>
+                      <input type="checkbox"> Java Script</input>
+                    <input type="checkbox"> C++</input>
+                     <input type="checkbox"> Ruby</input>
+                       <input type="checkbox"> PHP</input>
+                                             <textarea rows="4" cols="50"> PLease share your comments</textarea>
+                                                                         <input type="submit" > Submit</input>
+                                                                                             
+                                            
+    </form>
     
 </body>
 </html>
