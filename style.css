@@ -1,3 +1,48 @@
 body{
-background: green;
+background: rgb(9, 109, 143);
+text-align:center;
+color:white;
+font-family: 'Open Sans', sans-serif;
+}
+#myform{
+  text-align:center;
+  background: purple;
+  margin:10px 350px ;
+  padding: 20px 10px 20px 10px;
+ 
+
+  
+}
+.field{
+    margin-bottom:10px; 
+    border-radius:20; 
+    text-align:justify;
+
+}
+#langs{
+    text-align:justify;
+    align-items:center;
+    display: inline-block;
+}
+#submit{
+    background-color: green;
+    color:white;
+    padding:5px 10px;
+    width:250px;
+    margin-left:125;
+}
+.box{
+    border-radius: 5px;
+    width: 500px;
+    height:32px;
+    border-color: transparent;
+}
+#textarea{
+    height:100px;
+}
+#title{
+    margin-bottom:5px;
+}
+#explanation{
+    margin-top:5px;
 }

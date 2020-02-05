@@ -3,51 +3,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" type="text/css">
     <title>Document</title>
 </head>
 <body>
-    <h1 id="title">Microverse Survey Form. </h1>
-    <p> Thank you for taking the time to answer this.</p>
+    <h1 id="title">Microverse Survey Form</h1>
+    <p id="explanation"> Thank you for taking the time to participate in this survey</p>
     <div id="myform">
     <form id= "survey-form">
-        <div>
-        <label id="name-label" >NAME</label>
-        <input id="name" type="text" placeholder=" Enter your name here">
+        <div class="field">
+        <label id="name-label" >Name</label><br>
+        <input id="name" type="text" placeholder=" Enter your name here" class="box">
         </div>
-        <label id="email-label" > e-mail </label>
-        <input id="email" type="email" required placeholder= "Enter your e-mail here">
-        <div>
-          <div>                         
-        <label id="number-label> Number</label>                              
-        <input id= "number" type="number" min= "18" max="65" required placeholder= "Enter your age here">
+        <div >
+            <div class="field">
+        <label id="email-label" > E-mail </label><br>
+        <input id="email" type="email" required placeholder= "Enter your e-mail here" class="box">
         </div>
-        <div>
-        <label id="Gender">
-        <select name="Gender" id="dropdown">
+        <div class="field">
+          <div class="field">                         
+        <label id="number-label"> Age</label> <br>                           
+        <input id="number"  type="number" min="18" max="65"  placeholder="Enter your age here" class="box" required></input>
+        </div>
+        <div class="field">
+        <label id="Gender">Gender</label><br>
+        <select name="Gender" id="dropdown" class="box">
        <option value= "Male">Male</option>
      <option value="Female"> Female</option>
     </select> 
 </div>   
-<div>
-   <label> Agree to terms and conditios for the survey.</label>                        
+<div class="field">
+   <label> Agree to terms and conditios for the survey.</label>   <br>                     
     <input type="radio" name="gender"> YES</input>
    <input type="radio" name="gender"> NO</input> 
 </div>  
-            <div>
-                      <label> What Programs Languages would you like to learn?</label><br>
-                     
-                 <input type="checkbox"> Java Script</input><br>
+            <div class="field">
+                <label> What Programs Languages would you like to learn?</label><br>
                 </div> 
-                <div>
+                <div class="field" id="langs">
+                <input type="checkbox"> Java Script</input><br>
                  <input type="checkbox"> C++</input><br>
                 <input type="checkbox"> Ruby</input><br>
                 <input type="checkbox"> PHP</input><br>
                     </div>
-                    <div>
-                    <textarea rows="4" cols="50"> PLease share your comments</textarea>
+                    <div class="field">
+                    <textarea rows="4" cols="50" class="box" id="textarea"> PLease share your comments</textarea>
                 </div>
-                <div>
-                 <input type="submit" > Submit</input>
+                <div class="field">
+                 <input type="submit" id="submit" class="box"></input>
                 </div>                                                                          
                                             
     </form>
